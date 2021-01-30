@@ -1,0 +1,83 @@
+<div class="mt-3">
+
+    <!-- INICIO DOS ALERTAS -->
+    <div *ngIf="exibeAlertaSucesso" class="mt-3 alert alert-success" role="alert">
+        {{ mensagemSucesso }}
+    </div>
+    <div *ngIf="exibeAlertaErro" class="mt-3 alert alert-danger" role="alert">
+        {{ mensagemErro }}
+    </div>
+    <!-- TERMINO DOS ALERTAS -->
+
+    <!-- INICIO FORMULARIO DE EDICAO -->
+    <form *ngIf="exibeEdicao" [formGroup]="formContato">
+        <div class="row">            
+            <div class="col-4 mb-3">
+                <label for="nome" class="form-label">nome</label>
+                <input type="text" class="form-control" name="nome" id="nome" formControlName="nome"
+                    placeholder="digite seu nome">
+            </div>
+
+            <div class="col-4 mb-3">
+                <label for="cpf" class="form-label">cpf</label>
+                <input type="text" mask="000.000.000-00" class="form-control" name="cpf" id="cpf" formControlName="cpf"
+                    placeholder="digite seu cpf">
+            </div>
+
+            <div class="col-4 mb-3">
+                <label for="celular" class="form-label">celular</label>
+                <input type="text" mask="(00) 0 0000-0000" class="form-control" name="celular" id="celular"
+                    formControlName="celular" placeholder="digite seu telefone">
+            </div>
+        </div>
+        <div class="mb-3">
+            <button (click)="salvar()" type="button" class="btn bg-itau btn-continuar text-light"
+                value="Salvar">salvar</button>
+        </div>
+    </form>
+    <!-- INICIO FORMULARIO DE EDICAO -->
+
+    <!-- INICIO TABELA DE CONTATOS -->
+    <table class="table">
+        <thead class="table-dark">
+            <tr>
+                <td class="col-2">
+                    nome
+                </td>
+                <td class="col-2">
+                    cpf
+                </td>
+                <td class="col-2">
+                    celular
+                </td>
+                <td class="col-2">
+                    editar
+                </td>
+                <td class="col-2">
+                    excluir
+                </td>
+            </tr>
+        </thead>
+        <tbody>       
+            <tr *ngFor="let contato of listaContatos" >
+                <td class="col-2">
+                    {{ contato.nome_cadastro }}
+                </td>
+                <td class="col-2">
+                    {{ contato.cpf_cadastro }}
+                </td>
+                <td class="col-2">
+                    {{ contato.telefone_cadastro }}
+                </td>
+                <td class="col-2">
+                    <button type="button" (click)="editarContato(contato)" class="btn btn-link">editar</button>
+                </td>
+                <td class="col-2">
+                    <button type="button" (click)="excluirContato(contato.cpf_cadastro)" class="btn btn-link">excluir</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- TERMINO TABELA DE CONTATOS -->
+
+</div>

@@ -1,0 +1,30 @@
+<div class="bg-light container">
+    <div class="mt-3">
+        <h3>cadastro de contatos</h3>
+    </div>
+
+    <!-- INICIO DAS TABS -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <a class="nav-link active" id="cadastro-tab" data-bs-toggle="tab" href="#cadastro" role="tab"
+                aria-controls="cadastro" aria-selected="true">cadastro contato</a>
+        </li>
+        <li class="nav-item" role="presentation">
+            <a class="nav-link" id="lista-contato-tab" data-bs-toggle="tab" href="#lista-contato" role="tab"
+                aria-controls="lista-contato" aria-selected="false">lista de contatos</a>
+        </li>
+    </ul>
+    <!-- TERMINO DAS TABS -->
+
+    <!-- INICIO CONTEUDO DAS TABS -->
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="cadastro" role="tabpanel" aria-labelledby="cadastro-tab">
+            <cadastro-contato></cadastro-contato>
+        </div>
+        <div class="tab-pane fade" id="lista-contato" role="tabpanel" aria-labelledby="lista-contato-tab">
+            <lista-contato></lista-contato>
+        </div>
+    </div>
+    <!-- TERMINO CONTEUDO DAS TABS -->
+
+</div>

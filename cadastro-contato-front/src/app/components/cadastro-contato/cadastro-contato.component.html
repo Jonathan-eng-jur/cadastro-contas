@@ -1,0 +1,35 @@
+<!-- INICIO DOS ALERTAS -->
+<div *ngIf="exibeAlertaSucesso" class="mt-3 alert alert-success" role="alert">
+    Cadastro realizado com sucesso!
+</div>
+<div *ngIf="exibeAlertaErro" class="mt-3 alert alert-danger" role="alert">
+    {{ mensagemErro }}
+</div>
+<!-- TERMINO DOS ALERTAS -->
+
+<!-- INICIO DOS FORMULARIOS -->
+<form [formGroup]="formContato">
+    <div class="col-6 mb-3 mt-3">
+        <label for="nome" class="form-label">nome</label>
+        <input type="text" class="form-control" name="nome" id="nome" formControlName="nome"
+            placeholder="digite seu nome">
+    </div>
+
+    <div class="col-6 mb-3">
+        <label for="cpf" class="form-label">cpf</label>
+        <input type="text" mask="000.000.000-00" class="form-control" name="cpf" id="cpf" formControlName="cpf"
+            placeholder="digite seu cpf">
+    </div>
+
+    <div class="col-6 mb-3">
+        <label for="celular" class="form-label">celular</label>
+        <input type="text" mask="(00) 0 0000-0000" class="form-control" name="celular" id="celular"
+            formControlName="celular" placeholder="digite seu telefone">
+    </div>
+
+    <div class="">
+        <button (click)="cadastrar()" type="submit" class="btn bg-itau btn-continuar text-light btn-lg"
+            value="Cadastrar">cadastrar</button>
+    </div>
+</form>
+<!-- TERMINO DOS FORMULARIOS -->

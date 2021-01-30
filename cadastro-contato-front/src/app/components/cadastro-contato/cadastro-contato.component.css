@@ -1,0 +1,8 @@
+.bg-itau{
+    background-color: #ec7137;        
+}
+
+.btn-continuar:hover{
+    background-color: #eb6222;    
+    transition: .5s;
+}

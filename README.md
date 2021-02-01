@@ -38,8 +38,8 @@
 ## Requisitos da aplicação
 1. Listagem de contatos
 a <br />Requisito consite em poder listar e exibir os contatos ja salvos no banco de dados na tela para o usuário.
-b <br />API: http://localhost:9080/itau/cadastro/all
-c <br />Retorno: 
+<br />API: http://localhost:9080/itau/cadastro/all
+<br />Retorno: 
 ``` json
 [
     {

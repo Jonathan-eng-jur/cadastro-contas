@@ -67,7 +67,7 @@
 ```
 ![Dados Cadastro](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/2-Dados+Cadastro.jpeg)
 ![Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/3-Cadastro+Sucesso.jpeg)
-![Lista com Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/3-Cadastro+Sucesso.jpeg)
+![Lista com Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/4-Listando+Novo+Cadastro.jpeg)
 
 3. Editar contato
 <br />Requisito consite em poder realizar a edição de um contato.

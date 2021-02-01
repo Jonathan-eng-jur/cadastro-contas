@@ -37,6 +37,19 @@
  
 ## Requisitos da aplicação
 1. Listagem de contatos
+Requisito consite em poder listar e exibir os contatos ja salvos no banco de dados na tela para o usuário.
+API: http://localhost:9080/itau/cadastro/all
+Retorno: 
+``` json
+[
+    {
+        "nome_cadastro": "Jonathan Cavalcanti de Paula",
+        "cpf_cadastro": "44281998802",
+        "telefone_cadastro": "11992376816",
+        "active": false
+    }
+]
+```
 ![Lista de contatos](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/1-Listagem+de+contatos.jpeg)
 
   

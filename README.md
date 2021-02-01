@@ -36,9 +36,10 @@
  
  
 ## Requisitos da aplicação
-#### 1. Listagem de contatos
+1. Ca
 a <br />Requisito consite em poder listar e exibir os contatos ja salvos no banco de dados na tela para o usuário.
 <br />API: http://localhost:9080/itau/cadastro/all
+<br />Método: GET
 <br />Retorno: 
 ``` json
 [
@@ -51,6 +52,21 @@ a <br />Requisito consite em poder listar e exibir os contatos ja salvos no banc
 ]
 ```
 ![Lista de contatos](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/1-Listagem+de+contatos.jpeg)
+
+2. Cadastrar contato
+a <br />Requisito consite em poder realizar o cadastro de um contato.
+<br />API: http://localhost:9080/itau/cadastro
+<br />Método: POST
+<br />Body: 
+``` json
+{
+    "company_name": "Jonathan",
+    "company_document_number": "12345678999",
+    "phone_number": "193"
+}
+```
+![Dados Cadastro](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/2-Dados+Cadastro.jpeg)
+![Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/3-Cadastro+Sucesso.jpeg)
 
   
   

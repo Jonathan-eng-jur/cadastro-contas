@@ -37,7 +37,7 @@
  
 ## Requisitos da aplicação
 1. Listar Contatos
-a <br />Requisito consite em poder listar e exibir os contatos ja salvos no banco de dados na tela para o usuário.
+<br />Requisito consite em poder listar e exibir os contatos ja salvos no banco de dados na tela para o usuário.
 <br />API: http://localhost:9080/itau/cadastro/all
 <br />Método: GET
 <br />Retorno: 
@@ -67,6 +67,23 @@ a <br />Requisito consite em poder listar e exibir os contatos ja salvos no banc
 ```
 ![Dados Cadastro](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/2-Dados+Cadastro.jpeg)
 ![Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/3-Cadastro+Sucesso.jpeg)
+![Lista com Contato Cadastrado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/3-Cadastro+Sucesso.jpeg)
+
+3. Editar contato
+<br />Requisito consite em poder realizar a edição de um contato.
+<br />API: http://localhost:9080/itau/cadastro/{cpf}
+<br />Método: PUT
+<br />Body: 
+``` json
+{
+    "company_name": "Ricardo",
+    "company_document_number": "123456999",
+    "phone_number": "11999999999"
+}
+```
+![Dados Edicao Contato](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/4-Listando+Novo+Cadastro.jpeg)
+![Contato Editado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/5-Editando+Dados+Cadastro.jpeg)
+![Lista com Contato Editado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/6-Cadastro+Editado+com+Sucesso.jpeg)
 
   
   

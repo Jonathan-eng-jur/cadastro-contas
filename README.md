@@ -83,7 +83,6 @@
 ```
 ![Dados Edicao Contato](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/5-Editando+Dados+Cadastro.jpeg)
 ![Contato Editado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/6-Cadastro+Editado+com+Sucesso.jpeg)
-![Lista com Contato Editado](https://imagens-cadastro-contato.s3-sa-east-1.amazonaws.com/7-Listando+Cadastro+Editado.jpeg)
 
 4. Excluir Contato
 <br />Requisito consite em poder excluir um contato.
